@@ -1,15 +1,16 @@
 function reverseHandler(event) {
   // read user input
-  const userInput = event.input;
+  const form = event.target.form;
+  const userInput = form.input.value;
 
   // execute core logic
-  const reverse = reversed(userInput);
+  const reversed = reverse(userInput);
 
   // communicate result to user
-  document.getElementById("program-output").innerHtml = reverse;
+  document.getElementById("program-output").innerHtml = reversed;
 
   // log action for developers
-  console.log("user-action");
+  console.log("\n-- user action --");
   console.log("userInput:", userInput);
   console.log("reversed:", reversed);
 
