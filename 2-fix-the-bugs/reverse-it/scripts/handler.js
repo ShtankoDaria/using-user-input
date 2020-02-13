@@ -6,12 +6,12 @@ function reverseHandler(event) {
   const reverse = reversed(userInput);
 
   // communicate result to user
-  document.getElementById('programOutput').innerHtml = reverse;
+  document.getElementById("program-output").innerHtml = reverse;
 
   // log action for developers
-  console.log('\n-- user action --');
-  console.log('userInput:', userInput);
-  console.log('reversed:', reversed);
+  console.log("user-action");
+  console.log("userInput:", userInput);
+  console.log("reversed:", reversed);
 
   // for the browser
   return true;
