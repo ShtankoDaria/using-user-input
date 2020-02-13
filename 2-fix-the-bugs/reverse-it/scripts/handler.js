@@ -1,6 +1,6 @@
 function reverseHandler(event) {
   // read user input
-  const userInput = event.input.value;
+  const userInput = event.input;
 
   // execute core logic
   const reverse = reversed(userInput);
